@@ -32,12 +32,40 @@
     }
 
     /* HERO */
+    
     .hero{
-      position: relative;
-      min-height: 100vh;
-      background: url("assets/wave-2.jpg") center / cover no-repeat;
-      overflow: hidden;
-    }
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+  background:#05090c;
+}
+    .hero-bg-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.35;
+  z-index:0;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+  linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.65)
+  );
+  z-index:1;
+}
+
+.hero-content,
+.topbar{
+  position:relative;
+  z-index:2;
+}
 
     .hero::before{
       content:"";
@@ -397,21 +425,32 @@
         <div class="kicker">Safi • Rass Lefaa</div>
         <h1>Lefaa Photography <span class="a54">أ 54</span></h1>
 
-        <div class="hero-video">
-          <video
-            src="assets/wave%20intro.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata">
-          </video>
-        </div>
+        <header class="hero">
+          <video class="hero-bg-video"
+       autoplay
+       muted
+       loop
+       playsinline>
+    <source src="assets/wave intro.mp4" type="video/mp4">
+</video>
 
         <p class="lead">
-          Surf photography & film driven by ocean culture.
-          We capture the rhythm of Rass Lefaa — the wave that pulls surfers from around the world to Safi.
-        </p>
+  <p style="color: rgba(255,255,255,0.86);">
+  On the western edge of Safi, where ancient cliffs meet the Atlantic Ocean,
+  lies Rass Lefaa.
+
+  For generations, the sea has shaped this coastline, carving a wave that has
+  become legendary among surfers who know where to look.
+
+  When the swell arrives from deep in the Atlantic, the reef awakens.
+  Long walls of water draw elegant lines across the bay, creating moments of
+  rare precision and beauty.
+
+  Surfers travel thousands of miles to experience it.
+  We grew up with it.
+</p>
+</p>
+          <h2>The wave that shaped a coastline.</h2>
 
         <div class="meta">
           <span class="pill">Surf • Ocean Culture</span>
