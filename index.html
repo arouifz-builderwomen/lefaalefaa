@@ -415,16 +415,90 @@
       border-bottom-color: rgba(255,255,255,0.55);
     }
 
-    @media(max-width:900px){
-      .feature-grid,
-      .story-grid{ grid-template-columns:1fr; }
-      figure.card{ grid-column: span 12; }
-      h1{ white-space: normal; }
-      .logo{ width: 92px; height: 92px; }
-      .hero-video{ width: 100%; }
-      .feature-card video{ height: auto; }
-      .contact-label{ min-width: auto; }
-    }
+   @media (max-width: 768px){
+
+  .container{
+    width:94%;
+  }
+
+  .topbar-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .language-switch{
+    font-size:0.85rem;
+  }
+
+  .logo{
+    width:70px;
+    height:70px;
+  }
+
+  h1{
+    font-size:2.5rem;
+    line-height:1.1;
+    white-space:normal;
+  }
+
+  h2{
+    font-size:1.8rem;
+  }
+
+  .hero-content{
+    padding-top:130px;
+  }
+
+  .hero-stack{
+    max-width:100%;
+  }
+
+  .meta{
+    justify-content:center;
+  }
+
+  .pill{
+    font-size:0.8rem;
+  }
+
+  .feature-grid,
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  figure.card{
+    grid-column:span 12;
+  }
+
+  .hero-video{
+    width:100%;
+  }
+
+  .feature-card img,
+  .feature-card video{
+    height:auto;
+  }
+
+  .gallery-head{
+    text-align:center;
+  }
+
+  .gallery-head p{
+    max-width:100%;
+    margin:auto;
+  }
+
+  .contact-label{
+    min-width:auto;
+  }
+
+  .contact-line{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
   </style>
 </head>
 
